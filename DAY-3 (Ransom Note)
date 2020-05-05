@@ -1,0 +1,24 @@
+class Solution {
+public:
+    bool canConstruct(string ransomNote, string magazine) {
+        int sz=magazine.size();
+        map<char,int> mp;
+        for(int i=0;i<sz;i++)
+        {
+            mp[magazine[i]]++;
+        }
+        sz=ransomNote.size();
+        map<char,int> mp1;
+        for(int i=0;i<sz;i++)
+        {
+            mp1[ransomNote[i]]++;
+        }
+        map<char,int>:: iterator itr;
+        for(itr=mp1.begin();itr!=mp1.end();itr++)
+        {
+            if(mp[itr->first]<itr->second)
+                return false;
+        }
+        return true;
+    }
+};
