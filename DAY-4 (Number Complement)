@@ -1,0 +1,15 @@
+class Solution {
+public:
+    int findComplement(int num) {
+        int xx=num;
+        long int yy=1;
+        while(xx!=0)
+        {
+            yy=yy<<1;
+            xx=xx>>1;
+        }
+        yy=yy-1;
+        yy=num^(yy);
+        return yy;
+    }
+};
