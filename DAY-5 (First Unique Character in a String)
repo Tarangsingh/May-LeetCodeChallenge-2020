@@ -1,0 +1,23 @@
+class Solution {
+public:
+    int firstUniqChar(string s) {
+        map<char,int> mp,mp1;
+        map<char,int>:: iterator itr;
+        int sz=s.size(),pos=sz;
+        for(int i=0;i<sz;i++)
+        {
+            mp[s[i]]++;
+            if(mp[s[i]]==1)
+                mp1[s[i]]=i;
+        }
+        for(itr=mp.begin();itr!=mp.end();itr++)
+        {
+            if((itr->second==1)&&(mp1[itr->first]<pos))
+                pos=mp1[itr->first];
+        }
+        if(pos==sz)
+            return -1;
+        else
+            return pos;
+    }
+};
