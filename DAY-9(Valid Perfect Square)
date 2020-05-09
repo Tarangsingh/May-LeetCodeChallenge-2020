@@ -1,0 +1,18 @@
+class Solution {
+public:
+    bool isPerfectSquare(int num) {
+        long long int lo=1,hh=num,mid,msq;
+        while(lo<=hh)
+        {
+            mid=lo+((hh-lo)/2);
+            msq=mid*mid;
+            if(msq==num)
+                return true;
+            else if(msq>num)
+                hh=mid-1;
+            else
+                lo=mid+1;
+        }
+        return false;
+    }
+};
