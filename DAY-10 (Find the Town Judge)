@@ -1,0 +1,26 @@
+class Solution {
+public:
+    int findJudge(int N, vector<vector<int>>& trust) {
+        map<int,int> trusted;
+        map<int,int> ting;
+        int sz=trust.size();
+        if(sz==0)
+            return 1;
+        for(int i=0;i<sz;i++)
+        {
+            trusted[trust[i][1]]++;
+            ting[trust[i][0]]++;
+        }
+        map<int,int>:: iterator itr;
+        for(itr=trusted.begin();itr!=trusted.end();itr++)
+        {
+            if(itr->second==(N-1))
+            {
+                if(ting.find(itr->first)==ting.end())
+                    return itr->first;
+                    
+            }
+        }
+        return -1;
+    }
+};
