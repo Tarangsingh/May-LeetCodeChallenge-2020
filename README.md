@@ -11,3 +11,5 @@ A collection of solutions for the May LeetCode Challenge 2020
 | 7    | https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3322/ | Recursion(Tree traversal using DFS) | NA | O(n) | O(1) |
 | 8    | https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/535/week-2-may-8th-may-14th/3323/ | NA | NA | O(n) | O(1) |
 | 9    | https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/535/week-2-may-8th-may-14th/3324/ | Binary Search | NA | O(log(n)) | O(1) |
+| 10    | https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/535/week-2-may-8th-may-14th/3325/ | NA | HashMap | O(n) | O(n) |
+| 11   | https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/535/week-2-may-8th-may-14th/3326/ | DFS | 2D-vector | O(m*n) | O(m*n) |
