@@ -13,3 +13,4 @@ A collection of solutions for the May LeetCode Challenge 2020
 | 9    | https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/535/week-2-may-8th-may-14th/3324/ | Binary Search | NA | O(log(n)) | O(1) |
 | 10    | https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/535/week-2-may-8th-may-14th/3325/ | NA | HashMap | O(n) | O(n) |
 | 11   | https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/535/week-2-may-8th-may-14th/3326/ | DFS | 2D-vector | O(m*n) | O(m*n) |
+| 12    | https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/535/week-2-may-8th-may-14th/3327/ | Binary Search | NA | O(log(n)) | O(1) |
